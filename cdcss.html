@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Properties Practice</title>
+    <link rel="stylesheet" href="cdcss.css">
+</head>
+<body>
+
+    <h1>1. max-width</h1>
+    <div class="box max-width-box">
+        This box has width: 100% and max-width: 500px.
+        Resize the browser to see the effect.
+    </div>
+
+    <h1>2. float</h1>
+    <div class="float-container">
+        <div class="float-box">Float Left</div>
+        <p>
+            This paragraph wraps around the floated box.
+            The float property places the element on the left or right side,
+            and text flows around it.
+        </p>
+    </div>
+
+    <h1>3. opacity</h1>
+    <div class="opacity-box light">Opacity 0.3</div>
+    <div class="opacity-box medium">Opacity 0.6</div>
+    <div class="opacity-box dark">Opacity 1</div>
+
+    <h1>4. CSS Counters</h1>
+    <div class="counter-section">
+        <h2>HTML</h2>
+        <h2>CSS</h2>
+        <h2>JavaScript</h2>
+    </div>
+
+    <h1>5. calc() Function</h1>
+    <div class="box calc-box">
+        Width is calculated using calc(100% - 40px)
+    </div>
+
+    <h1>6. min() Function</h1>
+    <div class="box min-box">
+        Width uses min(400px, 90%)
+    </div>
+
+    <h1>7. max() Function</h1>
+    <div class="box max-box">
+        Padding uses max(20px, 5%)
+    </div>
+
+    <h1>8. clamp() Function</h1>
+    <p class="clamp-text">
+        This text size changes responsively using clamp().
+    </p>
+
+    <h1>9. text-rendering Optimization</h1>
+    <p class="optimize-text">
+        office official affine flow efficient
+    </p>
+
+    <h1>10. Extra Example: overflow + max-width</h1>
+    <div class="box overflow-box">
+        This long content stays inside a limited width container.
+        max-width helps prevent content from becoming too wide on large screens.
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Common box style */
+.box {
+    background-color: lightblue;
+    border: 2px solid steelblue;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* 1. max-width example */
+.max-width-box {
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* 2. float example */
+.float-container {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+    overflow: auto; /* clears float */
+    margin-bottom: 20px;
+}
+
+.float-box {
+    float: left;
+    width: 150px;
+    height: 100px;
+    background-color: orange;
+    margin-right: 15px;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+}
+
+/* 3. opacity example */
+.opacity-box {
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.light {
+    background-color: red;
+    opacity: 0.3;
+}
+
+.medium {
+    background-color: red;
+    opacity: 0.6;
+}
+
+.dark {
+    background-color:red;
+    opacity: 1;
+}
+
+/* 4. CSS counters example */
+.counter-section {
+    counter-reset: section;
+    background: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.counter-section h2 {
+    counter-increment: section;
+}
+
+.counter-section h2::before {
+    content: "Section " counter(section) ": ";
+    color: darkred;
+    font-weight: bold;
+}
+
+/* 5. calc() function example */
+.calc-box {
+    width: calc(100% - 40px);
+    background-color: #ffe4b5;
+}
+
+/* 6. min() function example */
+.min-box {
+    width: min(400px, 90%);
+    background-color: #d8bfd8;
+}
+
+/* 7. max() function example */
+.max-box {
+    padding: max(20px, 5%);
+    background-color: #98fb98;
+}
+
+/* 8. clamp() function example */
+.clamp-text {
+    font-size: clamp(18px, 4vw, 40px);
+    font-weight: bold;
+    color: darkblue;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* 9. text-rendering optimization */
+.optimize-text {
+    font-size: 32px;
+    text-rendering: optimizeLegibility;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* 10. extra example */
+.overflow-box {
+    max-width: 300px;
+    background-color: #fffacd;
+}
